@@ -21,6 +21,11 @@ when '4.2', nil
   gem 'actionpack', version
   gem 'actionmailer', version
   gem 'railties', version
+when '5.0', nil
+  version = '~> 5.0.0'
+  gem 'actionpack', version
+  gem 'actionmailer', version
+  gem 'railties', version
 else
   raise "Unrecognized Rails version: #{ENV['RAILS']}"
 end
