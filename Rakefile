@@ -12,6 +12,8 @@ Rake::TestTask.new do |t|
 end
 
 task "test:all" do
+  sh({"RAILS" => "5.0"}, $0, "test")
+  puts
   sh({"RAILS" => "4.2"}, $0, "test")
   puts
   sh({"RAILS" => "4.1"}, $0, "test")
